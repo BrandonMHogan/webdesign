@@ -1,0 +1,257 @@
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+	font-size: 100%; /* 16px */
+    line-height: normal;
+    font-weight: 300;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #646473;
+	
+	overflow:auto; 
+	background-color:#000;
+	overflow-x: hidden;
+	-webkit-overflow-x: hidden;
+	-moz-overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.abs
+{
+	position: absolute;
+}
+
+.divider {
+	height:4px;
+	width:100%;
+}
+
+section {
+	width: 100vw;
+	box-sizing: border-box;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 27px;
+    background-color: #F10061;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align:center;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/** Top Fixed Bar */
+.mbar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #1e1e1e;
+	z-index: 99999;
+}
+
+.mbar-content
+{
+	width: 650px;
+	margin: 0 auto;
+	margin-top: 6px;
+}
+
+/* ==========================================================================
+   All Sections
+   ========================================================================== */
+#entry,
+#about,
+#knowledge,
+#work,
+#contact {
+    overflow: hidden;
+    padding: 50px 0;
+	padding: 0 auto;
+}
+
+.title h2 {
+	font-size:6em;
+}
+
+.content p,
+.footer p {
+    font-size: 1.125rem;
+    font-size: 18px;
+    line-height: 2.25rem;
+    line-height: 36px;
+    color: #b0b0b0;
+	margin: auto;
+	padding-top:0.8em;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+	.content p,
+	.footer p {
+		width:45em;
+	}
+}
+/* ==========================================================================
+   Entry
+   ========================================================================== */
+
+#entry {
+	height:1000px;
+    background-color: #000;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#entry .content {
+    position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	
+}
+
+.entry-title {
+	left:0;
+	right:0;
+	z-index: 5;
+	margin-top:70px;
+}
+
+.entry-content h1 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+    opacity: 1;
+
+    -webkit-transition: opacity 0.2s 1.2s ease-out;
+       -moz-transition: opacity 0.2s 1.2s ease-out;
+         -o-transition: opacity 0.2s 1.2s ease-out;
+            transition: opacity 0.2s 1.2s ease-out;    
+}
+
+.entry-content h2 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+
+    -webkit-transition: opacity 0.2s 1.6s ease-out;
+       -moz-transition: opacity 0.2s 1.6s ease-out;
+         -o-transition: opacity 0.2s 1.6s ease-out;
+            transition: opacity 0.2s 1.6s ease-out;    
+}
+
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+	.entry-content h1 {
+		font-size: 6rem;
+	}
+	
+	.entry-content h2 {
+		font-size: 1.6125rem;
+	}
+}
+
+
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#about {
+    padding-bottom: 90px;
+    background-color: #fff;
+}
+
+.about-content a {
+    margin-top: 90px;
+}
+
+
+/* ==========================================================================
+   Contact Me
+   ========================================================================== */
+
+#contact-me {
+    background-color: #000;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact-me-title h1 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+    opacity: 1;
+
+    -webkit-transition: opacity 0.2s 1.2s ease-out;
+       -moz-transition: opacity 0.2s 1.2s ease-out;
+         -o-transition: opacity 0.2s 1.2s ease-out;
+            transition: opacity 0.2s 1.2s ease-out;    
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer {
+	background: #222;
+	height:90px;
+}
+
+#footer .header {
+	padding-top:25px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 0.9em;
+	color: #fff;
+	text-shadow: 0 2px 2px #000;
+}
